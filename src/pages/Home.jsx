@@ -8,11 +8,18 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-background flex items-center justify-center p-4">
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div className="md:flex bg-background">
+
+        {/* Sección Izquierda: PlayerCard */}
+        <div className="md:w-1/2 md:min-h-screen flex items-center justify-center p-4">
           <PlayerCard />
+        </div>
+
+        {/* Sección Derecha: Playlist */}
+        <div className="md:w-1/3 md:min-h-screen flex items-center justify-center p-4">
           <Playlist />
         </div>
+
       </div>
       <AboutMe />
       <Projects />
