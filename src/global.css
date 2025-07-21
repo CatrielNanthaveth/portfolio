@@ -1,0 +1,11 @@
+ @import "tailwindcss";
+ 
+@theme {
+  --color-background: #121212;
+  --color-card-background: #181818;
+  --color-hover-background: #282828;
+}
+
+html {
+  scroll-behavior: smooth;
+}
